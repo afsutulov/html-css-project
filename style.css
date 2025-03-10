@@ -1,0 +1,17 @@
+* {	/* ’уета на все, что не имеет стил€ */
+	color: #000000;
+	font-size: 14px;
+	
+}
+
+body {
+	background: #dddddd;
+	color: rgb(84, 28, 24);
+}
+
+p {
+	font-size: 25px;
+}
+
+h1 { color: #000000; }
+h2, h3, h4, h5, h6 { color: #1f3036; }

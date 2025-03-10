@@ -1,32 +1,71 @@
-<html> <!-- Область видимости html кода -->
+<!DOCTYPE html> <!-- Область видимости html кода -->
 
 <head> <!-- Настройка и подключение внешних файлов -->
+	<link href='style.css' rel='stylesheet' />
+	<meta charset='UTF-8' />
+	<title>Мой не первый сайт</title>
+	<style> 
+		h3 {color: purple; }
+		div {margin: 5px; padding: auto; }
+	</style>
+</head>
 
-</head> <!-- шапка сайта -->
-
-<header>
-
+<header> <!-- шапка сайта -->
+	<div style='border: 2px solid #000000; border-radius: 30px;'> <!-- контейнер для тегов и контента -->
+		<ul> <!-- список элементов -->
+			<h3>ТОП ЯЗЫКОВ ПРОГРАМММИРОВАНИЯ</h3>
+			<li>Python</li> <!-- перечень списка строка -->
+			<li>Go</li>
+			<li>Rust</li>
+			<li>C#</li>
+			<li>Java</li>
+		</ul>
+	</div>
+	<div  style='border: 4px solid #444444; border-radius: 20px;'> <!-- контейнер для тегов и контента -->
+		<ol> <!-- список элементов -->
+			<h3>ТОП ФИЛЬМОВ НА ВЕЧЕР</h3>
+			<li>Побег из Шушенка</li> <!-- перечень списка строка -->
+			<li>Зеленая книа</li>
+			<li>Переводчик</li>
+			<li>Малина</li>
+			<li>Неоспоримый</li>
+		</ol>
+	</div>
+	<div  style='border: 4px solid #111111; border-radius: 10px;'> <!-- контейнер для тегов и контента -->
+		<ol> <!-- список элементов -->
+			<h3>ПРАВИЛА РАБОТЫ С HTML</h3>
+			<li>Все пробелы, табуляция и начало новых строк преобразуются в обычный пробел</li> <!-- перечень списка строка -->
+			<li>Весь код должен быть отформатирован в виде тегов разметки</li>
+			<li>Если у элементов нет содержимого, то закрывающий тег ему НЕ НУЖЕН</li>
+			<li>Всегда должны быть теги: html, head, title, body. Остальные теги добавляются по наполнению сайта</li>
+			<li>Всегда выполнять правило матрешки</li>
+			<li>Текстовые блоки и значения атрибутов всегда берутся в кавычки</li>
+			<li>Всегда комментируем, сохраняем прогрес, проверяем</li>
+			<li>Атрибуты (свойства) тега являются уникальными, называть так тег, давать имя, обращаться к нему нельзя</li>
+		</ol>
+	</div>
 </header>
 
 <body>  <!-- Нужно для контента -->
-	<h1>Hello World!!!</h1> <!-- Заголовок с размером -->
-	<h2>Hello World!!!</h2>
-	<h3>Hello World!!!</h3>
-	<h4>Hello World!!!</h4>
-	<h5>Hello World!!!</h5>
-	<h6>Hello World!!!</h6>
-	<!-- Параграф
-	<b> bold полужирный шрифт
-	<i> italic курсив шрифт
-	<br /> переос на новую строку
-	<hr /> горизонтальная строка  -->
-	<hr />
-	<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b> Mauris dignissim ligula sit amet porta molestie. Donec lobortis neque in faucibus consectetur.<br /> Pellentesque sapien justo, auctor non ullamcorper ac, fermentum eu dolor. Nunc porta aliquam massa. Vivamus magna sapien, euismod nec interdum a, sodales eget mauris. Sed velit nisl, venenatis posuere turpis dignissim, scelerisque tincidunt ex. Duis rhoncus rutrum tortor, non volutpat enim ullamcorper ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc eget sem elit. In at purus sapien. <i>Praesent odio massa, scelerisque vitae consequat ac, consectetur eu eros.</i></p>
-	<hr />
-	<p><b>Pellentesque ac arcu commodo, ornare lorem a, mattis nibh.</b> Ut sit amet nulla leo. Aliquam eu interdum justo. In eget nunc nisi. <br />Curabitur maximus ante et dui suscipit venenatis. Curabitur pharetra quam nibh. Vivamus sed odio ac mauris fermentum semper eget eget lectus. Quisque posuere vulputate sem sit amet placerat. Etiam quis ullamcorper ipsum, eu tempus nulla. Aliquam varius faucibus sodales. Vivamus scelerisque nunc at blandit vestibulum. Nunc eget euismod ante. Donec vehicula finibus sagittis. <i>Sed a neque sem.</i></p>
-	<hr />
-	<p><b>Suspendisse at massa consectetur nunc placerat malesuada.</b> Proin ultrices tortor felis, in tincidunt tellus auctor at. Integer mollis eros ut lectus facilisis, vel condimentum ligula consequat. <br />Nam et sem vitae arcu semper rutrum. Aenean a semper arcu. In ultricies laoreet ultricies. Nunc purus orci, mollis ut porttitor et, hendrerit sit amet massa. Nullam id tempor leo. Sed ac nibh porta, semper enim at, vulputate massa. Vivamus ipsum orci, bibendum at libero eget, ornare tristique erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla in quam purus. <i>In tincidunt nibh quis tempor commodo.</i></p>
-	<hr />
+<h1>Hello World!!!</h1> <!-- Заголовок с размером -->
+<h2>Hello World!!!</h2>
+<h3>Hello World!!!</h3>
+<h4>Hello World!!!</h4>
+<h5>Hello World!!!</h5>
+<h6>Hello World!!!</h6>
+<!--
+<p> Параграф
+<b> bold полужирный шрифт
+<i> italic курсив шрифт
+<br /> переос на новую строку
+<hr /> горизонтальная строка  -->
+<hr />
+<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b>Mauris dignissim ligula sit amet porta molestie. Donec lobortis neque in faucibus consectetur.<br /> Pellentesque sapien justo, auctor non ullamcorper ac, fermentum eu dolor. Nunc porta aliquam massa. Vivamus magna sapien, euismod nec interdum a, sodales eget mauris. Sed velit nisl, venenatis posuere turpis dignissim, scelerisque tincidunt ex. Duis rhoncus rutrum tortor, non volutpat enim ullamcorper ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc eget sem elit. In at purus sapien. <i>Praesent odio massa, scelerisque vitae consequat ac, consectetur eu eros.</i></p>
+<hr />
+<p><b>Pellentesque ac arcu commodo, ornare lorem a, mattis nibh.</b>Ut sit amet nulla leo. Aliquam eu interdum justo. In eget nunc nisi. <br />Curabitur maximus ante et dui suscipit venenatis. Curabitur pharetra quam nibh. Vivamus sed odio ac mauris fermentum semper eget eget lectus. Quisque posuere vulputate sem sit amet placerat. Etiam quis ullamcorper ipsum, eu tempus nulla. Aliquam varius faucibus sodales. Vivamus scelerisque nunc at blandit vestibulum. Nunc eget euismod ante. Donec vehicula finibus sagittis. <i>Sed a neque sem.</i></p>
+<hr />
+<p><b>Suspendisse at massa consectetur nunc placerat malesuada.</b>Proin ultrices tortor felis, in tincidunt tellus auctor at. Integer mollis eros ut lectus facilisis, vel condimentum ligula consequat. <br />Nam et sem vitae arcu semper rutrum. Aenean a semper arcu. In ultricies laoreet ultricies. Nunc purus orci, mollis ut porttitor et, hendrerit sit amet massa. Nullam id tempor leo. Sed ac nibh porta, semper enim at, vulputate massa. Vivamus ipsum orci, bibendum at libero eget, ornare tristique erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla in quam purus. <i>In tincidunt nibh quis tempor commodo.</i></p>
+<hr />
 </body>
 
 <footer>  <!-- Доп информация. Плюс контакт -->
