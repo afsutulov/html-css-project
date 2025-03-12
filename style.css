@@ -1,12 +1,16 @@
-* {	/* Хуета на все, что не имеет стиля */
+/*
+* {
 	color: #000000;
 	font-size: 14px;
 	
 }
+*/
 
 body {
 	background: #dddddd;
 	color: rgb(84, 28, 24);
+	margin: 0px;
+	padding: 0px;
 }
 
 p {
@@ -15,21 +19,46 @@ p {
 
 /* Оформление меню */
 #menu1 {
-	background-color: #aaaaaa;
-	padding: 10px;
+	width: auto;
+	display: block;
+	margin: 0 auto 4px;
+}
+
+header {
+	background: #aaaaaa;
+	border-bottom: 4px solid #ffab51;
+	margin: 0px;
+	padding: 0px;
 }
 
 #menu1 ul {
 	list-style: none;
 	display: flex;
+	margin: 0px;
+	padding: 5px;
+	padding-left: 0;
 }
 
 #menu1 ul li {
+	width: 175px;
+	height: 35px;
+	font-size: 28px;
+	border-right: 4px solid #ffab51;
+	text-align: top;
+	vertical-align: middle;
+	margin: 5px;
+	background: #aaaaaa;
+	transition: 0.5s;
+	display: inline-block;
 }
 
 #menu1 ul li a {
+	text-decoration: none;
 }
 
+#menu1 ul li:hover {
+	background: #777777;
+}
 
 h1 { color: #000000; }
 h2, h3, h4, h5, h6 { color: #1f3036; }
