@@ -1,3 +1,41 @@
 #x1 {
 	background: red;
 }
+
+.post {
+	background: #aaaaaa;
+	border: 1px solid black;
+	border-radius: 30px;
+}
+
+.post img {
+	border: 3px solid #cecece;
+	border-radius: 40px;
+	/*
+	width
+	height
+	sizes - размеры страницы для разных макетов изображения, при разных разрешениях экрана
+	srcset - указывает набор возможных изображений для отображения в браузере (адрес, ширина, плотность пикселей)
+	imap - указатель срверной карты-изображения, к которой можно привязать ссылки
+	usmap - связывает картинку с картой изображения при помощи тега <map>
+	применяются изображения формата: JPEG, GIF, PNG, PNG-8,24,32, APNG, SVG, WEB, BMP, ICO, FAV
+	*/
+}
+
+.alignleft {
+	float: left;
+	margin-right: 15px;
+}
+
+.alignright {
+	float: right;
+	margin-left: 15px;
+}
+
+.post div {
+	padding: 30px;
+}
+
+.post-info {
+	color: gray;
+}
