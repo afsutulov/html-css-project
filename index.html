@@ -1,27 +1,33 @@
 <!DOCTYPE html> <!-- Область видимости html кода -->
-<html>
-<head> <!-- Настройка и подключение внешних файлов -->
-	<link href='style.css' rel='stylesheet' />
-	<meta charset='UTF-8' />
-	<title>Мой не первый сайт</title>
-	<style> 
-		h3 {color: purple; }
-		div {margin: 5px; padding: auto; }
+<head> <!-- для настройки и подключения 
+		внешних файлов-->
+	<link href='style.css' rel='stylesheet'>	
+	<meta charset='UTF-8'>
+	<title> Мой первый сайт</title>
+	<style>
+		h3{color: purple;}
+		div{ margin: 25px 10px 0 0; padding: auto;}
 	</style>
-</head>
+</head> 
 
-<header> <!-- шапка сайта -->
-	<nav id="menu1">
-		<ul> <!-- список элементов -->
- 			<li><a href='index.html'>Главное</a></li> <!-- перечень списка строка -->
-			<li><a href='index2.html'>Задание 1</a></li>
-			<li><a href='index3.html'>Задание 2</a></li>
-			<li><a href='index4.html'>Задание 3</a></li>
-			<li><a href='#'>Контакты</a></li>
+<header> <!--Шапка сайта. нужна для навигации-->
+	<nav class='menu1'>
+		<ul> <!--Список элементов -->
+				<li><a href='index.html'>Главная  </a></li> <!--Перечень списка строка -->
+				<li><a href='#'>Проекты  </a></li> <!--Перечень списка строка -->
+				<li><a href='#'>Блог     </a></li> <!--Перечень списка строка -->
+				<li><a href='#'>О Нас    </a></li> <!--Перечень списка строка -->
+				<li><a href='#'>Контакты </a></li> <!--Перечень списка строка -->
+		</ul>
+	</nav>
+	<nav class='menu1'>
+		<ul> <!--Список элементов -->
+				<li><a href='index2.html'>Практическая работа 1  </a></li> <!--Перечень списка строка -->
+				<li><a href='index3.html'>Практическая работа 2  </a></li> <!--Перечень списка строка -->
+				<li><a href='index4.html'>Практическая работа 3  </a></li> <!--Перечень списка строка -->
 		</ul>
 	</nav>
 </header>
-
 
 <body>  <!-- Нужно для контента -->
 	<div style='border: 2px solid #000000; border-radius: 30px;'> <!-- контейнер для тегов и контента -->
@@ -125,14 +131,34 @@
 </body>
 
 <footer>  <!-- Доп информация. Плюс контакт -->
-	<nav id="menu1">
-		<ul> <!-- список элементов -->
- 			<li><a href='index.html'>Главное</a></li> <!-- перечень списка строка -->
-			<li><a href='#'>Проекты</a></li>
-			<li><a href='#'>Блок</a></li>
-			<li><a href='#'>О нас</a></li>
-			<li><a href='#'>Контакты</a></li>
-		</ul>
-	</nav>
+<div>
+	<div>
+		<div class="footer-colums">
+			<div>
+				<img src="images\Smile.png" alt="logosite" width="100">
+			</div>
+			<div class="footer-colum">
+				<h1>О нас</h1>
+				<p>Данный сайт был создан в рамках изучения HTML & CSS на базе Академии Топ.<br>Сайт выполнен студентом Душегубом Всеебучим</p>
+			</div>
+			<div class="footer-colum">
+				<nav class='menuFooter'>
+				<ul> <!--Список элементов -->
+					<li><a href='index.html'>Главная  </a></li> <!--Перечень списка строка -->
+					<li><a href='#'>Проекты  </a></li> <!--Перечень списка строка -->
+					<li><a href='#'>Блог     </a></li> <!--Перечень списка строка -->
+					<li><a href='#'>О Нас    </a></li> <!--Перечень списка строка -->
+					<li><a href='#'>Контакты </a></li> <!--Перечень списка строка -->
+				</ul>
+				</nav>
+			</div>
+			<div class="footer-colum">
+				<h3>Свяжитесь с нами</h3>
+				<p>Если вы заинтересованы в работе со мной или просто нашли ошибку, вы можете написать по электронной почте<br><strong>E-mail: <a href='#'>jopa@mail.ru</a></strong></p>
+			</div>
+		</div>
+	</div>
+	<center>Все права защищены &copy; 2025, Пермь</center>
+</div>
 </footer>
 </html>
